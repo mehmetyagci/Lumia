@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Kapsamlı Check-Up Sihirbazı</title>
+  <meta content="Kapsamlı check-up sihirbazı ile derinlemesine sağlık kontrolleri yapın." name="description">
+  <meta content="kapsamlı check-up, sağlık kontrol sihirbazı, detaylı sağlık analizi" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <div class="logo me-auto">
+        <h1><a href="index.html">My Checkup</a></h1>
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link" href="index.html#hero">Ana Sayfa</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about">Hakkımızda</a></li>
+          <li><a class="nav-link scrollto" href="index.html#services">Hizmetlerimiz</a></li>
+          <li><a class="nav-link scrollto" href="index.html#contact">İletişim</a></li>
+          <li><a class="nav-link scrollto active" href="sihirbaz.html">Sihirbaz</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <main id="main">
+    <!-- ======= Sihirbaz Section ======= -->
+    <section id="sihirbaz" class="sihirbaz">
+      <div class="container">
+        <div class="section-title">
+          <h2>Kapsamlı Check-Up Sihirbazı</h2>
+          <p>Derinlemesine sağlık kontrolleri ile kapsamlı raporlar almak için bilgilerinizi girin ve süreci başlatın.</p>
+        </div>
+
+        <!-- Sihirbaz Form Başlangıcı -->
+        <form action="#" method="post" class="sihirbaz-form">
+          <!-- Adım 1 -->
+          <div class="step">
+            <h3>Adım 1: Kişisel Bilgiler</h3>
+            <div class="form-group">
+              <label for="fullname">Ad Soyad:</label>
+              <input type="text" id="fullname" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="age">Yaş:</label>
+              <input type="number" id="age" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="gender">Cinsiyet:</label>
+              <select id="gender" class="form-control" required>
+                <option value="" disabled selected>Cinsiyet Seçiniz</option>
+                <option value="male">Erkek</option>
+                <option value="female">Kadın</option>
+                <option value="other">Diğer</option>
+              </select>
+            </div>
+            <button type="button" class="next-step btn btn-primary">Sonraki Adım</button>
+          </div>
+          <!-- Adım 1 Bitişi -->
+
+          <!-- Adım 2 -->
+          <div class="step">
+            <h3>Adım 2: Sağlık Geçmişi</h3>
+            <div class="form-group">
+              <label for="medicalHistory">Sağlık Geçmişiniz:</label>
+              <textarea id="medicalHistory" class="form-control" rows="5" required></textarea>
+            </div>
+            <button type="button" class="prev-step btn btn-secondary">Önceki Adım</button>
+            <button type="button" class="next-step btn btn-primary">Sonraki Adım</button>
+          </div>
+          <!-- Adım 2 Bitişi -->
+
+          <!-- Diğer Adımlar... -->
+
+          <!-- Sihirbaz Tamamla -->
+          <div class="step">
+            <h3>Tebrikler!</h3>
+            <p>Sihirbazı başarılı bir şekilde tamamladığınızda sonuçlarınızı görebileceksiniz.</p>
+            <button type="button" class="prev-step btn btn-secondary">Önceki Adım</button>
+            <button type="submit" class="btn btn-success">Sonuçları Göster</button>
+          </div>
+          <!-- Sihirbaz Bitir -->
+        </form>
+        <!-- Sihirbaz Form Bitişi -->
+      </div>
+    </section>
+    <!-- End Sihirbaz Section -->
+  </main><!-- End #main -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Sihirbaz JS -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const steps = document.querySelectorAll('.step');
+      let currentStep = 0;
+
+      function showStep(step) {
+        steps.forEach((s, index) => {
+          s.style.display = index === step ? 'block' : 'none';
+        });
+      }
+
+      document.querySelectorAll('.next-step').forEach(button => {
+        button.addEventListener('click', () => {
+          if (currentStep < steps.length - 1) {
+            currentStep++;
+            showStep(currentStep);
+          }
+        });
+      });
+
+      document.querySelectorAll('.prev-step').forEach(button => {
+        button.addEventListener('click', () => {
+          if (currentStep > 0) {
+            currentStep--;
+            showStep(currentStep);
+          }
+        });
+      });
+
+      showStep(currentStep);
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Kişiselleştirilmiş Sağlık Kontrol Hizmeti</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        .navbar {
+            transition: all 0.3s;
+            background-color: transparent;
+        }
+        .navbar-scrolled {
+            background-color: whitesmoke !important;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, .1);
+        }
+        .nav-link, .navbar-brand {
+            color: #fff !important;
+        }
+        .navbar-scrolled .nav-link, .navbar-scrolled .navbar-brand {
+            color: #333 !important;
+        }
+        .hero {
+            height: 100vh;
+            background: url('https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-0.3.5&q=99&fm=jpg&crop=entropy&cs=tinysrgb&w=2048&fit=max&s=0cc3aa1cf8d6033d') center center no-repeat;
+            background-size: cover;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+        .hero-content {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .cta-button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 50px;
+            text-transform: uppercase;
+        }
+        .form-control-custom {
+            border-radius: 50px;
+        }
+        #steps .step img {
+            max-width: 50px;
+            margin-bottom: 10px;
+        }
+        .step h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .step p {
+            font-size: 0.9em;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+<!--Main Navigation-->
+<header>
+    <!-- Animated navbar-->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Sağlık Kontrol</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" aria-current="page" href="#hero">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Hizmet Özellikleri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#wizard">Sihirbaz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Referanslar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#doctors">Doktorlar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">SSS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#appointment">Randevu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav flex-row">
+                    <!-- Icons -->
+                    <li class="nav-item">
+                        <a class="nav-link pe-2" href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-2" href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-2" href="#">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-2" href="#">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Animated navbar -->
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container text-center">
+            <div class="hero-content">
+                <h1 class="display-2 fw-bold mb-3">Sağlığınızı Önemsiyoruz</h1>
+                <p class="lead">Kişiselleştirilmiş sağlık kontrol hizmeti ile sağlığınızı yakından takip edin.</p>
+                <form class="row g-2 justify-content-center mt-4">
+                    <div class="col-12 col-md-5">
+                        <input type="text" class="form-control form-control-custom" placeholder="Cinsiyet" aria-label="Cinsiyet">
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <input type="number" class="form-control form-control-custom" placeholder="Yaş" aria-label="Yaş">
+                    </div>
+                    <div class="col-12 col-md-2">
+                        <button type="submit" class="btn btn-primary cta-button">Sonuçları Gör</button>
+                    </div>
+                </form>
+                <span class="d-block mt-4">Şu anda hizmet verdiğimiz 30,642 kişi ve 5,717 sağlık kuruluşu var.</span>
+            </div>
+        </div>
+    </section>
+</header>
+
+<!-- How It Works Section -->
+<section id="steps" class="steps">
+    <div class="container">
+        <h2 class="mb-5 text-center">Sistem Nasıl Çalışır?</h2>
+        <div class="row text-center">
+            <div class="col-md-4 step">
+                <h3>1. Sağlık Bilgilerinizi Girin</h3>
+                <img src="https://assets.loseit.com/website/home/Home_SetGoal.svg" alt="Bilgilerinizi Girin">
+                <p>Sağlık geçmişinizi, yaş, cinsiyet ve yaşam tarzı bilgilerinizi girin.</p>
+            </div>
+            <div class="col-md-4 step">
+                <h3>2. Kişiselleştirilmiş Check-Up Önerisi Alın</h3>
+                <img src="https://assets.loseit.com/website/home/Home_TrackFoods.svg" alt="Check-Up Önerisi Alın">
+                <p>Size özel oluşturulan check-up paketlerini görün ve seçenekler arasından en uygun olanı seçin.</p>
+            </div>
+            <div class="col-md-4 step">
+                <h3>3. Sağlığınızı İyileştirin</h3>
+                <img src="https://assets.loseit.com/website/home/Home_LoseWeight.svg" alt="Sağlığınızı İyileştirin">
+                <p>Önerilen tıbbi işlemler ile daha sağlıklı bir size kavuşun ve yaşam kalitenizi artırın.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- More sections can continue here... -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
