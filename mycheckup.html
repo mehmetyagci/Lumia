@@ -43,7 +43,6 @@
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Ana Sayfa</a></li>
-          <li><a class="nav-link scrollto" href="#how-it-works">Sistem Nasıl Çalışır</a></li>
           <li><a class="nav-link scrollto" href="#checkup-assistant">Check-Up Asistanı</a></li>
 
           <li><a class="nav-link scrollto" href="#about">Hakkımızda</a></li>
@@ -179,168 +178,138 @@
       </div>
     </section>
     <!-- End Check-Up Asistanı Section -->
-    
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
-      <div class="container">
 
+     <!-- ======= Sihirbaz Section ======= -->
+     <section id="checkup-assistant-2" class="portfolio">
+      <div class="container">
         <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit</p>
+          <h2>Sihirbaz</h2>
+          <p>
+            Kapsamlı sağlık kontrol sihirbazımız ile sağlığınızı detaylı bir
+            şekilde analiz edin.
+          </p>
         </div>
 
         <div class="row">
           <div class="col-lg-12">
             <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
+              <li data-filter=".filter-bmi" class="filter-active">BMI</li>
+              <li data-filter=".filter-genetic">Genetik</li>
+              <li data-filter=".filter-lifestyle">Yaşam Tarzı</li>
+              <li data-filter=".filter-medical">Tıbbi Geçmiş</li>
             </ul>
           </div>
         </div>
 
         <div class="row portfolio-container">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="link-preview portfolio-lightbox" title="Preview"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">App 1</a></h4>
-                <p>App</p>
+          <!-- BMI Form -->
+          <div class="col-lg-12 portfolio-item filter-bmi">
+            <div class="sihirbaz-wrap">
+              <h4>BMI (Vücut Kitle İndeksi) Bilgileri:</h4>
+              <div class="form-group">
+                <label for="height">Boy (cm):</label>
+                <input
+                  type="number"
+                  id="height"
+                  class="form-control"
+                  placeholder="Boyunuzu girin"
+                />
+              </div>
+              <div class="form-group">
+                <label for="weight">Kilo (kg):</label>
+                <input
+                  type="number"
+                  id="weight"
+                  class="form-control"
+                  placeholder="Kilonuzu girin"
+                />
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-                <a href="assets/img/portfolio/portfolio-2.jpg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">Web 3</a></h4>
-                <p>Web</p>
+          <!-- Genetik Form -->
+          <div class="col-lg-12 portfolio-item filter-genetic">
+            <div class="sihirbaz-wrap">
+              <h4>Genetik Bilgiler:</h4>
+              <div class="form-group">
+                <label for="genetic-diseases"
+                  >Ailedeki Genetik Hastalıklar:</label
+                >
+                <textarea
+                  id="genetic-diseases"
+                  class="form-control"
+                  rows="3"
+                  placeholder="Ailedeki genetik hastalıkları girin"
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <label for="genetic-tests">Yapılan Genetik Testler:</label>
+                <textarea
+                  id="genetic-tests"
+                  class="form-control"
+                  rows="3"
+                  placeholder="Yapılan genetik testleri girin"
+                ></textarea>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-                <a href="assets/img/portfolio/portfolio-3.jpg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">App 2</a></h4>
-                <p>App</p>
+          <!-- Yaşam Tarzı Form -->
+          <div class="col-lg-12 portfolio-item filter-lifestyle">
+            <div class="sihirbaz-wrap">
+              <h4>Yaşam Tarzı Bilgileri:</h4>
+              <div class="form-group">
+                <label for="smoking">Sigara Kullanımı:</label>
+                <select id="smoking" class="form-control">
+                  <option value="" disabled selected>Seçiniz</option>
+                  <option value="none">Kullanmıyorum</option>
+                  <option value="occasional">Ara sıra</option>
+                  <option value="regular">Düzenli</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="alcohol">Alkol Kullanımı:</label>
+                <select id="alcohol" class="form-control">
+                  <option value="" disabled selected>Seçiniz</option>
+                  <option value="none">Kullanmıyorum</option>
+                  <option value="occasional">Ara sıra</option>
+                  <option value="regular">Düzenli</option>
+                </select>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-                <a href="assets/img/portfolio/portfolio-4.jpg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">Card 2</a></h4>
-                <p>Card</p>
+          <!-- Tıbbi Geçmiş Form -->
+          <div class="col-lg-12 portfolio-item filter-medical">
+            <div class="sihirbaz-wrap">
+              <h4>Tıbbi Geçmiş Bilgileri:</h4>
+              <div class="form-group">
+                <label for="medical-history"
+                  >Geçmişteki önemli hastalıklar ve tedaviler:</label
+                >
+                <textarea
+                  id="medical-history"
+                  class="form-control"
+                  rows="3"
+                  placeholder="Geçmişteki hastalıklar ve tedaviler hakkında bilgi verin"
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <label for="medications">Kullanılan İlaçlar:</label>
+                <textarea
+                  id="medications"
+                  class="form-control"
+                  rows="3"
+                  placeholder="Şu an kullanılan ilaçları belirtin"
+                ></textarea>
               </div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-                <a href="assets/img/portfolio/portfolio-5.jpg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">Web 2</a></h4>
-                <p>Web</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-                <a href="assets/img/portfolio/portfolio-6.jpg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">App 3</a></h4>
-                <p>App</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-                <a href="assets/img/portfolio/portfolio-7.jpg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">Card 1</a></h4>
-                <p>Card</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-                <a href="assets/img/portfolio/portfolio-8.jpg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">Card 3</a></h4>
-                <p>Card</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-                <a href="assets/img/portfolio/portfolio-9.jpg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">Web 1</a></h4>
-                <p>Web</p>
-              </div>
-            </div>
-          </div>
-
         </div>
-
       </div>
-    </section><!-- End Portfolio Section -->
+    </section>
+    <!-- End Sihirbaz Section -->
+  
 
 
     <!-- ======= About Section ======= -->
@@ -386,7 +355,7 @@
     <section id="faq" class="faq section light-background">
       <!-- Section Title -->
       <div class="container section-title aos-init aos-animate" data-aos="fade-up">
-        <h2>Frequently Asked Questions</h2>
+        <h2>Sık Sorulan Sorular</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div><!-- End Section Title -->
       <div class="container">
